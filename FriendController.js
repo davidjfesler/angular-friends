@@ -1,4 +1,4 @@
-var app = angular.module('daveapp');
+var app = angular.module('friendApp');
 
 app.controller('friendCtrl', function($scope) {
 	$scope.searcher = {};
