@@ -52,7 +52,7 @@ app.controller('friendCtrl', function($scope) {
             "name": "Sandy, Utah"
         },
         "status": {
-            "message": "Cannot wait for Hawaii! Excited to b away from work! I'm getting tired of all the drama!! Big news coming soon!!!",
+            "message": "Cannot wait for Hawaii! Excited to be away from work! I'm getting tired of all the drama!! Big news coming soon!!!",
             "time": "1381115766",
             "status_id": "10101839870247153",
             "comment_count": "0"
