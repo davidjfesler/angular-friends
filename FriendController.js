@@ -2,7 +2,19 @@ var app = angular.module('friendApp');
 
 app.controller('friendCtrl', function($scope) {
 	$scope.searcher = {};
-	$scope.criteria = "name";
+	$scope.criteria = "";
+	$scope.change = function(){
+		var prevValue
+		for(var key in $scope.searcher){
+			if($scope.searcher[key]){
+				prevValue = $scope.searcher[key];
+				$scope.searcher[key] = "";
+			};
+		};
+		$scope.searcher[$scope.criteria] = prevValue;
+		// console.log($scope.criteria, prevValue)
+		// console.log($scope.searcher[$scope.criteria])
+	}
 	$scope.friends = [
     {
         "name": "Preston McNeil",

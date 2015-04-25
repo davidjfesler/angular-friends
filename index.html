@@ -19,7 +19,8 @@
   <div class="form-group">
 
 <input class="form-control" placeholder="Search Anything About Your Friends" ng-model="searcher[criteria]">
-    <select class="input-medium" ng-model="criteria">
+    <select class="input-medium" ng-model="criteria" ng-change="change()">
+        <option value="">Everything</option>
         <option value="name">Name</option>
         <option value="friend_count"># friends</option>
         <option value="current_location.city">City</option>
